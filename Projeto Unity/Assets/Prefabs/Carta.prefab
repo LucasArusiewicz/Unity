@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 222945319473791454}
   - component: {fileID: 114925464181485124}
   - component: {fileID: 114343449227631012}
+  - component: {fileID: 114751940663472602}
   m_Layer: 9
   m_Name: Carta
   m_TagString: Untagged
@@ -195,6 +196,28 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Nome
+--- !u!114 &114751940663472602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1619752180666438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93138ee648f0df040888c4753a4c5aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carta: {fileID: 0}
+  text_nome: {fileID: 114715391812670446}
+  text_descricao: {fileID: 114682492722997478}
+  image_gravura: {fileID: 114057937175894218}
+  text_vida: {fileID: 0}
+  text_forca: {fileID: 0}
+  text_armadura: {fileID: 0}
+  text_vel_Ataque: {fileID: 0}
+  text_vel_Mov: {fileID: 0}
+  text_alcance: {fileID: 0}
+  text_campo_Visao: {fileID: 0}
 --- !u!114 &114925464181485124
 MonoBehaviour:
   m_ObjectHideFlags: 1
