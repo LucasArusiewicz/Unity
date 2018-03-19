@@ -10,7 +10,7 @@ public class UICarta : MonoBehaviour {
 	public Text text_nome;
 	public Text text_descricao;
 
-	public Image image_gravura;
+	public Texture2D image_gravura;
 
 	public Text text_vida;
 	public Text text_forca;
@@ -25,7 +25,7 @@ public class UICarta : MonoBehaviour {
 		text_nome.text = carta.nome;
 		text_descricao.text = carta.descricao;
 
-		image_gravura.sprite = carta.gravura;
+		image_gravura = carta.getImage();
 
 		/*text_vida.text = carta.descricao;
 		text_forca.text = carta.descricao;
