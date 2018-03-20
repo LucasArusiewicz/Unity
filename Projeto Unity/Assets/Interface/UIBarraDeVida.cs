@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class UIBarraDeVida : MonoBehaviour {
-
+public class UIBarraDeVida : MonoBehaviour 
+{
     private Image barra_vida;
     private Image barra_dano;
 
@@ -11,11 +11,13 @@ public class UIBarraDeVida : MonoBehaviour {
 
     private const float DELAY_DANO = 0.3f;
 
-    void Start () {
+    void Start () 
+	{
         GetComponentes();
     }
 	
-	void LateUpdate () {
+	void LateUpdate () 
+	{
         AtualizaBarras();
     }
 
