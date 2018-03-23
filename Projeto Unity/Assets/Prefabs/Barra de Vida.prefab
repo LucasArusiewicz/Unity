@@ -132,7 +132,7 @@ MonoBehaviour:
   m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
 --- !u!114 &114530238385594974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FillOrigin: 1
 --- !u!114 &114850925329032370
 MonoBehaviour:
   m_ObjectHideFlags: 1
