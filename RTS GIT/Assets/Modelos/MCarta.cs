@@ -10,7 +10,7 @@ public class MCarta : ScriptableObject {
 
 	public string nome;
 	public string descricao;
-	public Texture2D gravura;
+	public Sprite gravura;
 
 	public int vida;
 	public int forca;
@@ -29,7 +29,7 @@ public class MCarta : ScriptableObject {
 
 
 
-	public Texture2D getImage(){
+	public Sprite getImage(){
 		return this.gravura;
 	}
 }

@@ -10,7 +10,7 @@ public class UICarta : MonoBehaviour {
 	public Text text_nome;
 	public Text text_descricao;
 
-	public Texture2D image_gravura;
+	public Sprite image_gravura;
 
 	public Text text_vida;
 	public Text text_forca;

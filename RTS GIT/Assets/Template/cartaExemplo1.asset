@@ -11,9 +11,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a627026718bf4364aaad2f863a21eb15, type: 3}
   m_Name: cartaExemplo1
   m_EditorClassIdentifier: 
-  nome: Teste
+  nome: Mago
   descricao: Alguma coisa aqui
-  gravura: {fileID: 2800000, guid: 418eb6a0f343910409fad12549de9572, type: 3}
+  gravura: {fileID: 21300000, guid: b219b64ff3dc7134b99cc25f7f5f3cb2, type: 3}
   vida: 0
   forca: 0
   armadura: 0
