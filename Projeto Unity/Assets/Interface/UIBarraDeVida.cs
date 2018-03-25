@@ -3,6 +3,9 @@ using UnityEngine.UI;
 
 public class UIBarraDeVida : MonoBehaviour 
 {
+
+    private Camera m_MainCamera;
+
     private Image barra_vida;
     private Image barra_dano;
 
@@ -13,12 +16,14 @@ public class UIBarraDeVida : MonoBehaviour
 
     void Start () 
 	{
+        m_MainCamera = Camera.main;
         GetComponentes();
     }
 	
 	void LateUpdate () 
 	{
         AtualizaBarras();
+        AjustaRotacao();
     }
 
     private void GetComponentes()
@@ -40,6 +45,14 @@ public class UIBarraDeVida : MonoBehaviour
         {
             barra_dano.fillAmount = barra_vida.fillAmount;
         }
+    }
+
+    private void AjustaRotacao()
+    {
+        Vector3 v = m_MainCamera.transform.position - transform.position;
+        v.y = v.z = 0.0f;
+        transform.LookAt(m_MainCamera.transform.position - v);
+        transform.Rotate(0, 180, 0);
     }
 
     public void DefineValores(float vida_maxima, float vida_atual)
