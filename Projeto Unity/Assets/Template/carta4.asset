@@ -8,12 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a627026718bf4364aaad2f863a21eb15, type: 3}
-  m_Name: cartaExemplo1
+  m_Script: {fileID: 11500000, guid: d838300e9549adf44a8bab822cd24f0f, type: 3}
+  m_Name: carta4
   m_EditorClassIdentifier: 
-  nome: Mago
-  descricao: Alguma coisa aqui
-  gravura: {fileID: 21300000, guid: b219b64ff3dc7134b99cc25f7f5f3cb2, type: 3}
+  nome: Witch
+  descricao: 
+  gravura: {fileID: 21300000, guid: b7c5f0f30512885499bf2cf5890ae355, type: 3}
   vida: 0
   forca: 0
   armadura: 0
@@ -21,4 +21,4 @@ MonoBehaviour:
   vel_Mov: 0
   alcance: 0
   campo_Visao: 0
-  material: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  material: {fileID: 0}
