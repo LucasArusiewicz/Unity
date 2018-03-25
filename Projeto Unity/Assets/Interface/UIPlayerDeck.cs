@@ -21,20 +21,15 @@ public class UIPlayerDeck : MonoBehaviour {
     void Start () {
 
         foreach (MCarta comandanteCarta in comandante.getDeck()){
-
-			GameObject newCarta = Instantiate(cartaPrefab) as GameObject;
-            newCarta.transform.SetParent(panelCartas.transform, false);
+ 
+			GameObject newCarta = Instantiate(cartaPrefab, panelCartas.transform) as GameObject;
+           
             newCarta.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = comandanteCarta.getImage();
 
+            Button carta = newCarta.transform.GetChild(1).gameObject.GetComponent<Button>();
+            carta.onClick.AddListener(() => criaUI_Tropa(comandanteCarta.getImage()));
 
-
-            Button buttonCtrl = newCarta.transform.GetChild(1).gameObject.GetComponent<Button>();
-            buttonCtrl.onClick.AddListener(() => criaUI_Tropa(comandanteCarta.getImage()));
-
-            cartasEventos.Add(buttonCtrl);
-
-
-          
+            cartasEventos.Add(carta);
 
 
         }
@@ -45,7 +40,7 @@ public class UIPlayerDeck : MonoBehaviour {
     {
         GameObject Tropa = Instantiate(UITropa) as GameObject;
         Tropa.transform.SetParent(PanelTropaSpawned.transform, false);
-        Tropa.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = a;
+        Tropa.transform.GetChild(0).gameObject.GetComponent<Button>().gameObject.GetComponent<Image>().sprite = a;
     }
 
     private void FixedUpdate()
