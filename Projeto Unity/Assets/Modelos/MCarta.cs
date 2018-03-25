@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Nova Carta", menuName = "Cartas")]
+
+
+
 public class MCarta : ScriptableObject {
 
 	public string nome;
 	public string descricao;
-
 	public Sprite gravura;
 
 	public int vida;
@@ -23,5 +25,11 @@ public class MCarta : ScriptableObject {
 	public void Info()
 	{
 		Debug.Log (nome + ": " + descricao);
+	}
+
+
+
+	public Sprite getImage(){
+		return this.gravura;
 	}
 }
