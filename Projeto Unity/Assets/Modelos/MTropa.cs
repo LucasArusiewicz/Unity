@@ -1,4 +1,6 @@
-﻿public class Tropa : MUnidade
+﻿using UnityEngine;
+
+public class MTropa : MUnidade
 {
 
 	// Use this for initialization
