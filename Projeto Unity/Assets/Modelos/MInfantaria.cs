@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MTropa : MUnidade
+public class MInfantaria : MUnidade
 {
 
 	// Use this for initialization
